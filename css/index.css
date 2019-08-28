@@ -126,6 +126,83 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  max-width: 1440px;
+  width: 100%;
+  opacity: 0.97;
+  background: #fcfcfb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  z-index: 99999;
+}
+.header-logo {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  width: 15%;
+  height: 38px;
+}
+.logo {
+  height: 60px;
+  opacity: 0.8;
+}
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+@media screen and (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
+  nav a {
+    display: none;
+  }
+  .sign-up-btn {
+    display: none;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #5563fa;
+  transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+nav a:hover {
+  color: #2e2f38;
+  text-decoration: underline;
+}
+.sign-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5563fa;
+  border: 1.3px solid #5563fa;
+  background: #fcfcfb;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.sign-up-btn:hover {
+  opacity: 1;
+  background-color: #5563fa;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
 body {
   margin: 0;
   padding: 0;
@@ -147,7 +224,7 @@ body .team-section .inner-width {
   font-size: 20px;
   text-transform: uppercase;
   display: inline-block;
-  border-bottom: 4px solid;
+  border-bottom: 4px;
   padding-bottom: 10px;
 }
 .pe {
