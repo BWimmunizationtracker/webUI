@@ -126,27 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.header {
-  height: 72px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.header .nav-bar {
-  padding: 15px;
-}
-.header .nav-bar .nav-class {
-  text-decoration: none;
-  padding: 10px;
-  color: #4B4B4B;
-}
-.header .logo {
-  height: 38px;
-  width: 80px;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  line-height: 38px;
-}
 body {
   margin: 0;
   padding: 0;
@@ -191,7 +170,7 @@ body .team-section .inner-width {
 }
 .pe:hover {
   filter: none;
-  background: #ddd;
+  background: #e3e4e8;
 }
 .pe .p-name {
   margin: 16px 0;
@@ -237,7 +216,7 @@ body .team-section .inner-width {
 }
 .pe.bottom:hover {
   filter: none;
-  background: #ddd;
+  background: #e3e4e8;
 }
 .pe img {
   width: 120px;
